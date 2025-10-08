@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    background-color: #080808;
+    color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#header {
+    width: 100%;
+    background: linear-gradient(180deg, #4a0000 0%, #120000 100%);
+    color: #f9f9f9;
+    padding: 40px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #700000;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 1.2px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+#header p {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #d6d6d6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    max-width: 800px;
+    background: radial-gradient(circle at top, #0f0f0f, #050505);
+    border-radius: 25px;
+    margin: 50px 0;
+    padding: 40px 30px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.card {
+    background: linear-gradient(180deg, #1a0000 0%, #0a0000 100%);
+    border: 1px solid #660000;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    width: 75%;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(120, 0, 0, 0.5),
+                0 0 40px rgba(255, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #400000;
+    padding-bottom: 6px;
+    font-size: 22px;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.2);
+}
+
+.card p, .card li {
+    line-height: 1.7;
+    color: #f1f1f1;
+}
+
+.card ul, .card ol {
+    margin: 0 auto;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.commands {
+    background-color: #0a0000;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: 'Libre Baskerville', serif;
+    color: #fdfdfd;
+    border: 1px solid #770000;
+    line-height: 1.8;
+    box-shadow: inset 0 0 12px rgba(255, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.commands:hover {
+    background-color: #100000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}

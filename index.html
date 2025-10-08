@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="header"> 
+        <h1>Summary By Alica</h1>
+        <p>Summary Git</p>
+    </div>
+
+    <div class="container">
+        <section class="card">
+            <h2>Apa Itu Git? </h2>
+                <p>Git Adalah Sistem Version Control yang Digunakan Untuk Melacak Perubahan Pada File Proyek
+                Git Membantu Programmer Bekerja Secara Kolaboratif Tanpa Perlu Kehilangan Data Versi Sebelumnya</p>
+        </section>
+
+        <section class="card">
+            <h2>Cara Kerja Git</h2>
+            <p>Git Bekerja Dengan Tiga Area Utama:</p>
+            <ul>
+                <li><strong>Working Directory:</strong> tempat file diedit.</li>
+                <li><strong>Staging Area:</strong> tempat menandai file yang siap disimpan.</li>
+                <li><strong>Repository:</strong> tempat menyimpan seluruh riwayat perubahan (commit).</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Perintah Dasar Git</h2>
+            <div class="commads">
+                git init -- membuat repository baru
+                <br>
+                git status -- menampilkan status dari file 
+                <br>
+                git add -- menambahkan semua file ke staging area 
+                <br>
+                git commit -m "message"-- menyimpan perubahan ke repository lokal
+                <br>
+                git log -- melihat riwayat commit
+                <br>
+                git branch -- melihat atau membuat branch baru\
+                <br>
+                git checkout &lt;branch&gt; -- pindahke branch
+                <br>
+                git merge &lt;branch&gt; -- menggabungkan branch
+                <br>
+                git push origin main -- mengunggah perubahan ke GitHub
+                <br>
+                git pull origin main -- mengambil update dari GitHub
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Langkah Praktik</h2>
+            <ol>
+                <li>Buka terminal di folder proyek dan jalankan 
+                    <code>git init</code>
+                </li>
+                <li>Tambahkan file dengan 
+                    <code>git add .</code>
+                </li>
+                <li>Simpan perubahan dengan 
+                    <code>git commit -m "pesan commit"</code>
+                </li>
+                <li>Hubungkan dengan GitHub: 
+                    <code>git remote add origin &lt;url&gt;</code>
+                </li>
+                <li>Kirim ke GitHub dengan 
+                    <code>git push origin main</code>
+                </li>
+                <li>Gunakan 
+                    <code>git pull</code> 
+                    untuk sinkronisasi dengan tim.</li>
+            </ol>
+        </section>
+
+    </div>
+</body>
+</html>
